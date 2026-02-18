@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>
+Your Cart
+</h2>
+
+{% for product in products %}
+
+<div class="card p-3 mb-3">
+
+<h5>
+{{ product.name }}
+</h5>
+
+<p>
+₹{{ product.price }}
+</p>
+
+</div>
+
+{% endfor %}
+
+{% endblock %}

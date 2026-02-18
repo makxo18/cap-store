@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+<div class="col-md-5">
+
+<div class="card p-4">
+
+<h3 class="mb-3">
+Register
+</h3>
+
+<form method="POST">
+
+<input name="username"
+class="form-control mb-3"
+placeholder="Username"
+required>
+
+<input name="email"
+class="form-control mb-3"
+placeholder="Email"
+required>
+
+<input type="password"
+name="password"
+class="form-control mb-3"
+placeholder="Password"
+required>
+
+<select name="role"
+class="form-control mb-3">
+
+<option value="customer">
+Customer
+</option>
+
+<option value="vendor">
+Vendor
+</option>
+
+</select>
+
+<button class="btn btn-dark w-100">
+Register
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}
